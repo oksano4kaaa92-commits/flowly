@@ -393,10 +393,15 @@ h1 {
   font-size: 56px;
   line-height: 1;
   letter-spacing: -0.05em;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
 }
 
 .plan-price span {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 600;
   color: #6b6f7c;
 }
 
