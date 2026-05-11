@@ -354,6 +354,17 @@ h1 {
   background: #ffffff;
   border: 1px solid rgba(23, 24, 28, 0.08);
   box-shadow: 0 28px 80px rgba(23, 24, 28, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 34px 90px rgba(23, 24, 28, 0.12);
 }
 
 .pricing-card.premium {
@@ -389,20 +400,29 @@ h1 {
 }
 
 .plan-price {
-  margin: 16px 0 10px;
-  font-size: 56px;
-  line-height: 1;
-  letter-spacing: -0.05em;
-
   display: flex;
   align-items: flex-end;
-  gap: 4px;
+  gap: 6px;
+
+  margin: 16px 0 10px;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
 }
 
 .plan-price span {
-  font-size: 22px;
+  display: inline-block;
+
+  margin-bottom: 7px;
+
+  font-size: 20px;
   font-weight: 600;
+  line-height: 1;
+
   color: #6b6f7c;
+  letter-spacing: -0.02em;
 }
 
 .plan-subtitle {
