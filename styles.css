@@ -193,7 +193,8 @@ h1 {
 .screenshots-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  gap: 28px;
+  align-items: start;
 }
 
 .screenshot-card {
